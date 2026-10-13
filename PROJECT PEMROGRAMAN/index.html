@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8f6">
+    <title>RuangKu UNIMED — Peminjaman Ruang Kampus</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" data-page="home" aria-label="RuangKu UNIMED beranda">
+          <span class="brand-mark">R</span>
+          <span class="brand-copy"><strong>ruangku</strong><small>UNIVERSITAS NEGERI MEDAN</small></span>
+        </a>
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <button class="nav-link active" data-page="home">Beranda</button>
+          <button class="nav-link" data-page="rooms">Jelajahi ruang</button>
+          <button class="nav-link" data-page="schedule">Jadwal</button>
+        </nav>
+        <div class="topbar-actions" id="topbar-actions"></div>
+      </header>
+      <main id="app" tabindex="-1"></main>
+      <footer class="footer">
+        <a class="brand footer-brand" href="#" data-page="home">
+          <span class="brand-mark">R</span>
+          <span class="brand-copy"><strong>ruangku</strong><small>UNIVERSITAS NEGERI MEDAN</small></span>
+        </a>
+        <span>Ruang kampus, dikelola lebih baik.</span>
+        <span class="footer-note">Prototipe akademik · Data tersimpan di perangkat ini</span>
+      </footer>
+    </div>
+    <div id="modal-root"></div>
+    <div id="toast-region" class="toast-region" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
